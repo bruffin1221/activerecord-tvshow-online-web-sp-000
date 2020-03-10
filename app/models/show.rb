@@ -21,5 +21,5 @@ def Show::ratings_sum
 end
 
 def
- Show.where("rating=?", para[:shows])
+ Show.where("rating=?", params[:shows])
 end
