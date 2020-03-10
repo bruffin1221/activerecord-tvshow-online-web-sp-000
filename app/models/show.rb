@@ -5,7 +5,7 @@ def Show::highest_rating
 end
 
 def Show::most_popular_show
-  Show.where(category: 'rating').order("value DESC").first
+  Show.order("rating": :desc)
 end
 
 
