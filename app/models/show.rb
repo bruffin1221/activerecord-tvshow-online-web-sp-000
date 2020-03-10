@@ -16,8 +16,10 @@ def Show::least_popular_show
   Show.order("rating": :asc).first
 end
 
-def  Show::ratings_sum
+def Show::ratings_sum
   Show.sum("rating")
 end
 
+def
+ Show.order("rating": :desc).where ("rating" >5) 
 end
