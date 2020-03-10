@@ -21,5 +21,7 @@ def Show::ratings_sum
 end
 
 def
- Show.where("rating=?", params[:shows])
+ shows_ratings=[]
+ show_ratings=Show.order("rating": :desc).where ("ratings">5)
+ binding.pry
 end
