@@ -5,7 +5,7 @@ def Show::highest_rating
 end
 
 def Show::most_popular_show
-  Show.maximum("rating")(1)
+  Show.maximum("rating")
 end
 
 
