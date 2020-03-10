@@ -21,5 +21,5 @@ def Show::ratings_sum
 end
 
 def
- Show.order("rating": :desc).where ("rating" >5) 
+ Show.where ("rating" >5) 
 end
