@@ -20,6 +20,6 @@ def Show::ratings_sum
   Show.sum("rating")
 end
 
-def
- show_ratings=Show.order("rating": :desc).where ("ratings">5)
+def Show::popular_shows
+  Show.order("rating": :desc).where ("ratings">5)
 end
