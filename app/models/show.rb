@@ -22,6 +22,7 @@ end
 
 def Show::popular_shows
   Show.order("rating": :desc).where ("ratings">5)
+  binding.pry
 end
 
 end
