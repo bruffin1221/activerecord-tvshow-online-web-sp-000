@@ -5,7 +5,7 @@ def Show::highest_rating
 end
 
 def Show::most_popular_show
-  Show.maximum("rating").limit(1)
+  Show.where(category: 'rating').order("value DESC").first
 end
 
 
